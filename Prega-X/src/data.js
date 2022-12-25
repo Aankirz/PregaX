@@ -8,13 +8,13 @@ export const trimesterPhase=[
     {
         id:2,
         name: "Second Trimester",
-        weeks: "1-12",
+        weeks: "13-26",
         
     },
     {
         id:3,
         name: "Third Trimester",
-        weeks: "1-12",
+        weeks: "27-40",
         
     }
 ]
