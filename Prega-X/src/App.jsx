@@ -23,7 +23,7 @@ export default function App() {
       <Route path="/chat" element={<Chatbox/>} />
       <Route path="/todo" element={<Todo/>} />
       <Route path="/trimester" element={<TrimesterList/>} />
-        <Route path="/trimester/:id" element={<Trimester data={trimester}/>} />
+       <Route path="/trimester/:id" element={<Trimester data={trimester}/>} />
       </Routes>
     </div>
   )
