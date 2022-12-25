@@ -21,9 +21,10 @@ export default function TrimesterList() {
   )  
   
   return (
- 
-<div className="selectTrimesterContainer">
-    <h2>Select Trimester</h2>
+ <div className='TrimesterContainer'>
+ <h2>Select Trimester</h2>
+ <div className="selectTrimesterContainer">
+   
     {
       trimesterPhase.map((trimester)=>( 
        <Link to={`/trimester/${trimester.id}`} key={trimester.id}>
@@ -33,6 +34,8 @@ export default function TrimesterList() {
     }
      
     </div>
+ </div>
+
 
    
    
