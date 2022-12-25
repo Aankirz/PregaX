@@ -1,0 +1,23 @@
+
+.selectTrimesterContainer{
+    padding: 2rem;
+    padding-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+.TrimesterPhaseCard{
+    width: 100%; 
+    border: 2px solid #000;
+   
+    
+ }
+.selectTrimesterContainer h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+    margin-bottom: 2rem;
+}

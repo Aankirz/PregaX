@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { trimesterPhase,trimester } from '../../data';
 
 
-
+import './TrimesterList.css';
 
 
 export default function TrimesterList() {
   
   const TrimesterCard=({name,weeks})=>(
     
-  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+  <div className='TrimesterPhaseCard'>
     <h3>{name}</h3>
     <p>{weeks}</p>
   </div>
