@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useState } from 'react';
 
 const Chatroom = () => {
@@ -25,7 +25,7 @@ const Chatroom = () => {
   };
 
   return (
-    <div className="flex h-screen bg-gray-300">
+    <div className="flex h-screen w-screen bg-gray-300">
       <div className="w-1/4 bg-gray-500 p-4">
         <h2 className="text-2xl font-bold text-white">Users</h2>
         <div className="my-4">
@@ -34,7 +34,7 @@ const Chatroom = () => {
       </div>
       <div className="w-3/4 bg-white p-4">
         <h2 className="text-2xl font-bold mb-4">Chat</h2>
-        <div className="overflow-y-scroll h-64">
+        <div className="overflow-y-scroll h-[80%] ">
           <MessageList messages={messages} />
         </div>
         <MessageForm sendMessage={sendMessage} />
@@ -73,15 +73,26 @@ const UserList = () => {
   );
 };
 const MessageList = ({ messages }) => {
-  return messages.map((message) => (
-    <div className="flex items-start mb-4">
-      <img src={message.avatar} alt={message.user} className="w-10 h-10 rounded-full mr-2" />
-      <div className="bg-gray-300 rounded p-2">
-        <p className="text-gray-700 font-bold text-lg">{message.user}</p>
-        <p className="text-gray-600 text-sm">{message.message}</p>
-      </div>
+  const messagesEndRef = useRef(null);
+
+  useEffect(() => {
+    messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
+  }, [messages]);
+
+  return (
+    <div className="h-full overflow-y-scroll">
+      {messages.map((message) => (
+        <div className="flex items-start mb-4">
+          <img src={message.avatar} alt={message.user} className="w-10 h-10 rounded-full mr-2" />
+          <div className="bg-gray-300 rounded p-2">
+            <p className="text-gray-700 font-bold text-lg">{message.user}</p>
+            <p className="text-gray-600 text-sm">{message.message}</p>
+          </div>
+        </div>
+      ))}
+      <div ref={messagesEndRef} />
     </div>
-  ));
+  );
 };
 
 const MessageForm = ({ sendMessage }) => {
@@ -98,7 +109,7 @@ const MessageForm = ({ sendMessage }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="mb-4">
+    <form onSubmit={handleSubmit} className="mb-2 absolute bottom-0 w-[70%]">
       <input
         type="text"
         value={message}
@@ -111,6 +122,8 @@ const MessageForm = ({ sendMessage }) => {
     </form>
   );
 };
+
+
 
 export default Chatroom;
 
