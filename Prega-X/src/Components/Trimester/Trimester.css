@@ -1,10 +1,11 @@
 .trimester{
     width:100%;
-    height:500vh;
+    height:300vh;
     overflow-x: hidden;
     padding: 1rem;
     background-color: #FFC0CB;
     color: #DDA0DD;
+    scroll-behavior: smooth;
 }
 
 .trimesterNameContainer,.foodsContainer,.excercisesContainer,.symptomsContainer,.thingsToConsiderContainer{

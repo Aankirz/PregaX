@@ -6,7 +6,7 @@ const Chatroom = () => {
     {
       user: 'User 1',
       message: "Hey, how's it going?",
-      avatar: 'https://randomuser.me/api/portraits/men/1.jpg',
+      avatar: 'https://randomuser.me/api/portraits/women/2.jpg',
     },
     {
       user: 'User 2',
@@ -16,7 +16,7 @@ const Chatroom = () => {
     {
       user: 'User 3',
       message: "I'm doing great, thanks! Just chatting with some friends.",
-      avatar: 'https://randomuser.me/api/portraits/men/2.jpg',
+      avatar: 'https://randomuser.me/api/portraits/women/4.jpg',
     },
   ]);
 

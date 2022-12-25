@@ -1,31 +1,47 @@
-import React from "react";
-import "./navbar.css"
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Navbar(){
-    return(
-        <>
-            <nav classNameName="navbar sticky-top navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="#">Baby</a>
-        <button classNameName="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#home">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#features">Features</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#footer">Contact Us</a>
+
+import './navbar.css'
+
+const Navbar = () => {
+
+  return (
+    <div className="Navbar">
+        <div className="logo">
+            <h1>Prega-X</h1>
+        </div>
+
+        <ul>
+            <li> <Link to="/">
+            Home
+            </Link>
+                 </li>
+            <li>
+                <Link to="/trimester">
+                Trimester   </Link>
             </li>
             
-          </ul>
-        </div>
-      </nav>
-        </>
-    );
+            <li>
+                <Link
+                to="/todo">
+                Planner   </Link>
+                
+              </li>
+            
+            <li>
+              
+              <Link to="/chat">Chat</Link>
+                </li>
+           
+          
+            
+        </ul>
+        
+                
+              
+    </div>
+  )
 }
 
-export default Navbar;
+export default Navbar
