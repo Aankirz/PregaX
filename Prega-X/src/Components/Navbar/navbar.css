@@ -47,4 +47,26 @@ border: 2px solid rgba(250, 136, 222, 0.411);
     color: #bd004c;
     font-weight: 700;
 }
+.hamburger{
+    display: none;
+}
 
+@media (max-width:800px){
+    .navlinks ul{
+       display: none;
+    }
+
+    .hamburger{
+        margin-top: 20px;
+        display: fixed;
+        position: absolute;
+        right: 5%;
+       height: 30px;
+       width: 30px;
+        color: wheat;
+    }
+
+
+
+
+}
