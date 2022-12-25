@@ -39,7 +39,7 @@ const SignupForm = () => {
         return <Navigate to="/login" />
     }
     return (
-        <form onSubmit={handleSignup}>
+        <form onSubmit={handleSignup} style={{paddingTop:"8rem"}}>
             <input type="text" name="name" className="border rounded w-full py-2 px-3 mb-4" placeholder="Name" />
             <input type="email" name="email" className="border rounded w-full py-2 px-3 mb-4" placeholder="Email" />
             <input type="password" name="password" className="border rounded w-full py-2 px-3 mb-4" placeholder="Password" />

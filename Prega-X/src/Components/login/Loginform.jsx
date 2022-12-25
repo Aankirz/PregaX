@@ -33,7 +33,7 @@ const LoginForm = () => {
     }
 
     return (
-        <form onSubmit={handleLogin}>
+        <form onSubmit={handleLogin} style={{paddingTop:"8rem"}}>
             <input type="email" name="email" className="border rounded w-full py-2 px-3 mb-4" placeholder="Email" />
             <input type="password" name="password" className="border rounded w-full py-2 px-3 mb-4" placeholder="Password" />
             <button type="submit" className="btn btn-primary">Log In</button>

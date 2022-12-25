@@ -1,6 +1,8 @@
 import React from "react";
 import "./landingpage.css"
 
+import { Link } from "react-router-dom";
+
 function LandingPage(){
     return(
     <>
@@ -16,11 +18,15 @@ function LandingPage(){
       <p className="third-text">Track your pregnancy week by week, engage in mommy-to-mom conversation, and discover details on the growth of the baby, signs of pregnancy, and more. </p>
 
       <div className="buttons-home">
-      <a href="https://www.freepik.com/" className="home-link">
-      <button type="button" className="btn btn-one">Sign In</button></a>
+     <Link to="/login">
+     <button type="button" className="btn btn-one">Sign In</button>
+     
+     </Link>
 
-      <a href="https://www.freepik.com/" className="home-link">
-      <button type="button" className="btn btn-two">Sign Up</button></a>
+      <Link to="/signup">
+      <button type="button" className="btn btn-two">Sign Up</button>
+      
+      </Link>
       </div>
     </div>
 
