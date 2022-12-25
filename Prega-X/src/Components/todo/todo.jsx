@@ -78,7 +78,7 @@ function Todo() {
   
   loop
   mode="normal"
-  src="https://lottie.host/bf4169f2-ea15-4055-a6ea-6ea6699d2cd4/qKlZ5hn66H.json"
+  src="https://assets9.lottiefiles.com/packages/lf20_larb2qqu.json"
   
 ></lottie-player>
           <figcaption>What's on your list for Today</figcaption>
