@@ -14,8 +14,9 @@ export default function App() {
   return (
     <div className="App">
       <Routes>
-      <Route path="/trimester" element={<TrimesterList/>} />
-        <Route path="/trimester/:id" element={<Trimester data={trimester}/>} />
+        <Route path="/trimester" element={<TrimesterList />} />
+        <Route path="/trimester/:id" element={<Trimester data={trimester} />} />
+
       </Routes>
     </div>
   )
