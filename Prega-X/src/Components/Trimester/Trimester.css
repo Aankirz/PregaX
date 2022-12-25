@@ -1,0 +1,51 @@
+.trimester{
+    width:100%;
+    height:500vh;
+    overflow-x: hidden;
+    padding: 1rem;
+    background-color: #FFC0CB;
+    color: #DDA0DD;
+}
+
+.trimesterNameContainer,.foodsContainer,.excercisesContainer,.symptomsContainer,.thingsToConsiderContainer{
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid rgb(0, 0, 0);
+}
+.symptomsContainer,.excercisesContainer{
+    flex-direction: column;
+}
+.symptomsContainer{
+    height: 100vh;
+}
+.trimesterNameContainer .trimesterImg{
+    width:40%;
+    height:100%;
+    
+}
+.trimesterNameContainer .trimesterNameContent{
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    border:2px solid rgb(0, 0, 0);
+    justify-content: center;
+}
+.trimesterImg img{
+    width:50%;
+    height:50%;
+    object-fit: cover;
+}
+
+
+.borderLine{
+    width: 10%;
+    height: 2px;
+    background-color: #ff00ff;
+   
+    transform: rotate(90deg);
+}
