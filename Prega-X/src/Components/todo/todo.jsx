@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./todo.css"
 import { AiOutlinePlusCircle } from 'react-icons/ai'
-
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 import { Client, Account, Databases, ID } from 'appwrite'
 
 const client = new Client();
@@ -73,7 +73,14 @@ function Todo() {
     <div className="main-div">
       <div className='child-div'>
         <figure>
-          <img src={{}} alt="panda" ></img>
+        <lottie-player
+  autoplay
+  
+  loop
+  mode="normal"
+  src="https://lottie.host/bf4169f2-ea15-4055-a6ea-6ea6699d2cd4/qKlZ5hn66H.json"
+  
+></lottie-player>
           <figcaption>What's on your list for Today</figcaption>
         </figure>
 
@@ -94,7 +101,7 @@ function Todo() {
               return (
                 <div className='eachItem' key={item.$id}>
                   <h3>{item.Todo}</h3>
-                  <i className="fa fa-regular fa-trash" add-btn onClick={() => deleteItem(item.$id)}></i>
+                  <i className="fa fa-regular fa-trash add-btn" onClick={() => deleteItem(item.$id)}></i>
                 </div>
               )
 

@@ -37,8 +37,9 @@ const Trimester = ({data}) => {
           <p>{trimester.food.avoid}</p>
         </div>
      </div>
+     <h1>Symptoms</h1>
      <div className="symptomsContainer">
-        <h1>Symptoms</h1>
+        
         <li><h4>{trimester.symptoms[0].name}</h4>
              <p>{trimester.symptoms[0].remedy}</p>
         </li>
@@ -49,9 +50,10 @@ const Trimester = ({data}) => {
              <p>{trimester.symptoms[2].remedy}</p>
         </li>
      </div>
-     <div className="excercisesContainer">
-        <h1>Excercises</h1>
-     <div className="excerciseImg">
+     <h1>Excercises</h1>
+     <div className="exercisesContainer">
+        
+     <div className="exerciseImg">
             
       </div>
            
@@ -64,8 +66,11 @@ const Trimester = ({data}) => {
     
      <div className="thingsToConsiderContainer">
         <h1>Things To Consider</h1>
+       
         <li>{trimester.thingsToConsider[0]}</li>
         <li>{trimester.thingsToConsider[1]}</li>
+        
+       
      </div>
    </div>
     );
